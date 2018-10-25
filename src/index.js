@@ -12,7 +12,8 @@ class AutoZipAfterBuild {
     } else {
       compiler.plugin('done', (compilation) => {
         // webpack 3.8
-        console.log('处于编译完成的阶段', compilation)
+        console.log(__dirname) // '/'
+        console.log('处于编译完成的阶段', compilation.compilation)
         // 因为 done 所以不需要 callback
       })
     }
