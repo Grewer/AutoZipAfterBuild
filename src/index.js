@@ -1,5 +1,11 @@
 class AutoZipAfterBuild {
   constructor(options) {
+    if (!options.dirName) {
+      return console.warn(new Error('请输入根目录,例如 __dirname + \'/..\''))
+    }
+    if (!options.buildName) {
+      return console.warn(new Error('请输入build文件目录,例如 /build'))
+    }
     console.log('options', options)
   }
 
