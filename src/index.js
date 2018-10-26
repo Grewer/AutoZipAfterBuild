@@ -73,12 +73,11 @@ class AutoZipAfterBuild {
     if (compiler.hooks) {
       compiler.hooks.done.tap('AutoZipAfterBuild', () => {
         // 未测试
-        console.log('Hello World!');
+        this.zip()
       });
     } else {
       compiler.plugin('done', (compilation) => {
         // webpack 3.8
-        console.log('处于编译完成的阶段')
         this.zip()
         // Object.keys(compilation.compilation.assets) // 可获取 assets  列表  但是不完全  因为没有 public 中的复制的文件和插件生成的文件
         // 因为 done 所以不需要 callback
