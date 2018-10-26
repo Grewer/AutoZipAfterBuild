@@ -21,6 +21,7 @@ module.exports = {
       }
     ]
   },
+  target: "node",
   plugins: [],
   entry: {
     index: './src/index.js'

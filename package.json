@@ -28,5 +28,9 @@
     "babel-loader": "^8.0.4",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "yazl": "^2.4.3"
   }
 }
