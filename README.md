@@ -21,3 +21,15 @@ plugins: [
     })
 ]
 ```
+
+#### output
+build  文件下:
+```
+/static
+/asset-manifest.json
+/favicon.ico
+/index.html
+/manifest.json
+/service-worker.js
+/测试压缩名称10.26-16.49.zip
+```
