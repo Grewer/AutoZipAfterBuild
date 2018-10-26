@@ -12,6 +12,8 @@ npm i -D autozipafterbuild
 
 
 ```
+const autozipafterbuild = require('autozipafterbuild')
+
 plugins: [
     new autozipafterbuild({
       dirName: __dirname + '/..', // 根目录路径

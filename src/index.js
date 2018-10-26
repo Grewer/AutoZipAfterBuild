@@ -72,7 +72,7 @@ class AutoZipAfterBuild {
   apply(compiler) {
     if (compiler.hooks) {
       compiler.hooks.done.tap('AutoZipAfterBuild', () => {
-        // 未测试
+        // webpack 4+
         this.zip()
       });
     } else {
